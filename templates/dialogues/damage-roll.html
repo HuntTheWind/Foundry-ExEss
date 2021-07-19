@@ -7,6 +7,11 @@
             </div>
         </div>
         {{#if decisive}}
+<div class="resource flex-center mb-2">
+            <div>
+                <label class="resource-label">{{localize "ExEss.Power"}} </label>
+                <input id="power" type="number" value="{{power}}">
+            </div>
             <div class="flex-center resource-label" style="font-weight: bold;">
                 Damage
             </div>
@@ -38,8 +43,11 @@
                         <input id="double-damage-tens" name="double-damage-tens" type="checkbox" checked>
                         <span>Db 10s</span>
                     </label>
-                    <label class="resource-label">{{localize "ExEss.RerollFailed"}}: </label>
+                    <label class="resource-label" style="align-items:center;display:flex;">{{localize "ExEss.RerollFailed"}}: </label>
                     <input type="checkbox" id="reroll-damage-failed" name="data.rollable">
+
+                    <label class="resource-label" style="align-items:center;display:flex;">{{localize "Excellent Strike"}}: </label>
+                    <input type="checkbox" id="excellent-strike" name="data.rollable">
                 </div>
             </div>
         {{/if}}
@@ -48,9 +56,15 @@
             Defender
         </div>
         <div class="resource grid grid-2col flex-center">
-            <input placeholder="Defence" id="defence" type="number">
+<div>
+	<label class="resource-label">{{localize "ExEss.Defence"}} </label>
+            <input id="defence" type="number" value="{{defence}}">
+</div>
             {{#if decisive}}
-            <input placeholder="Soak" id="soak" type="number">
+<div>
+<label class="resource-label">{{localize "ExEss.Soak"}} </label>
+            <input id="soak" type="number" value="{{soak}}">
+</div>
             {{/if}}
         </div>
     </div>
