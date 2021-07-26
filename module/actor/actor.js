@@ -7,8 +7,8 @@ export class ExaltedessenceActor extends Actor {
   /**
    * Augment the basic actor data with additional dynamic data.
    */
-  prepareData() {
-    super.prepareData();
+  prepareBaseData() {
+    super.prepareBaseData();
 
     const actorData = this.data;
     const data = actorData.data;
