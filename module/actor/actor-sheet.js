@@ -741,7 +741,7 @@ let soak = parseInt(html.find('#soak').val()) || 0;
           else {
             if (decisive) {
               let bonusDamageDice = parseInt(html.find('#damage-dice').val()) || 0;
-              let damageSuccesses = parseInt(html.find('#damage-success').val()) || 0;
+              let damageSuccesses = parseInt(html.find('#damage-successes').val()) || 0;
 let power = parseInt(html.find('#power').val()) || 0;
               //Fix to damage later
               let doubleSevens = html.find('#double-damage-sevens').is(':checked');
